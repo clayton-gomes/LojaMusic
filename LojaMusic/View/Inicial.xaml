@@ -1,0 +1,41 @@
+﻿<Window x:Name="Inicial" x:Class="LojaMusic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <!--<Grid>
+        <Button x:Name="btnCadastrarCliente" Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="142,74,0,0" VerticalAlignment="Top" Width="196" Click="btnCadastrarCliente_Click"/>
+        <Button x:Name="btnCadastrarCategoria" Content="Cadastrar Categoria" HorizontalAlignment="Left" Margin="142,146,0,0" VerticalAlignment="Top" Width="196" Click="btnCadastrarCategoria_Click"/>
+        <Button x:Name="btnCadastrarInstrumento" Content="Cadastrar Instrumento" HorizontalAlignment="Left" Margin="142,213,0,0" VerticalAlignment="Top" Width="196" Click="btnCadastrarInstrumento_Click"/>
+
+    </Grid>-->
+
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="517">
+            <MenuItem Header="Cadastrar">
+                <MenuItem Header="Cliente" HorizontalAlignment="Left" Width="145" Click="MenuItem_Click"/>
+                <MenuItem x:Name="btnCadastrarCategoria" Header="Categoria" HorizontalAlignment="Left" Width="154" Click="CadastroCategoria_Click"/>
+                <MenuItem x:Name="btnCadastrarInstrumento" Header="Instrumento" HorizontalAlignment="Left" Width="163" Click="CadastroInstrumento_Click" Margin="0,0,-9,0"/>
+                <Separator HorizontalAlignment="Left" Width="145"/>
+                <!--<MenuItem Header="Sair" HorizontalAlignment="Left" Width="145" Click="MenuItem_Click_1"/>-->
+            </MenuItem>
+
+            <MenuItem Header="Locação">
+                <!--<MenuItem Header="Cliente" HorizontalAlignment="Left" Width="145" Click="MenuItem_Click"/>
+                <MenuItem x:Name="btnCadastrarCategoria" Header="Categoria" HorizontalAlignment="Left" Width="154" Click="CadastroCategoria_Click"/>
+                <MenuItem x:Name="btnCadastrarInstrumento" Header="Instrumento" HorizontalAlignment="Left" Width="163" Click="CadastroInstrumento_Click" Margin="0,0,-9,0"/>
+                <Separator HorizontalAlignment="Left" Width="145"/>-->
+                <!--<MenuItem Header="Sair" HorizontalAlignment="Left" Width="145" Click="MenuItem_Click_1"/>-->
+            </MenuItem>
+
+            <MenuItem Header="Devolução">
+                <!--<MenuItem Header="Cliente" HorizontalAlignment="Left" Width="145" Click="MenuItem_Click"/>
+                <MenuItem x:Name="btnCadastrarCategoria" Header="Categoria" HorizontalAlignment="Left" Width="154" Click="CadastroCategoria_Click"/>
+                <MenuItem x:Name="btnCadastrarInstrumento" Header="Instrumento" HorizontalAlignment="Left" Width="163" Click="CadastroInstrumento_Click" Margin="0,0,-9,0"/>
+                <Separator HorizontalAlignment="Left" Width="145"/>-->
+                <!--<MenuItem Header="Sair" HorizontalAlignment="Left" Width="145" Click="MenuItem_Click_1"/>-->
+            </MenuItem>
+
+        </Menu>
+
+    </Grid>
+</Window>
