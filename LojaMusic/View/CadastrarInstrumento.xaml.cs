@@ -49,5 +49,10 @@ namespace LojaMusic.View
             }
 
         }
+
+        private void cboCategorias_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

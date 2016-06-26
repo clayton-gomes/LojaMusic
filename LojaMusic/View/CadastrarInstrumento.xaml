@@ -9,7 +9,7 @@
         <TextBox x:Name="txtInstNome" HorizontalAlignment="Left" Height="23" Margin="83,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <TextBox x:Name="txtInstPreco" HorizontalAlignment="Left" Height="23" Margin="83,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <Button x:Name="btnGravarInstrumento" Content="Gravar" HorizontalAlignment="Left" Margin="47,206,0,0" VerticalAlignment="Top" Width="207" Height="41" Click="btnGravarInstrumento_Click"/>
-        <ComboBox x:Name="cboCategorias" HorizontalAlignment="Left" Margin="83,107,0,0" VerticalAlignment="Top" Width="199"/>
+        <ComboBox x:Name="cboCategorias" HorizontalAlignment="Left" Margin="83,107,0,0" VerticalAlignment="Top" Width="199" SelectionChanged="cboCategorias_SelectionChanged"/>
 
     </Grid>
 </Window>

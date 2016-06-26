@@ -14,6 +14,5 @@ namespace LojaMusic.Model
         [Key]
         public int ItemEmprestimoId { get; set; }
         public Instrumento Instrumento { get; set; }
-        public double PrecoUnitario { get; set; }
     }
 }

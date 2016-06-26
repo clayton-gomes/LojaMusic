@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace LojaMusic.DAO
 {
-    class ClienteDAO
+    class EmprestimoDAO
     {
+        private static List<Emprestimo> listaDeEmrprestimos = new List<Emprestimo>();
         private static Context ctx = new Context();
-        private static object c;
 
-        public static bool AdicionarCliente(Cliente c)
+        public static bool AdicionarEmrpestimo(Emprestimo Ept)
         {
             try
             {
-                ctx.Clientes.Add(c);
+                ctx.Emprestimos.Add(Ept);
                 ctx.SaveChanges();
                 return true;
             }
@@ -25,17 +25,9 @@ namespace LojaMusic.DAO
                 return false;
             }
         }
-
-        public static List<Cliente> RetornarLista()
+        public static List<Emprestimo> RetorarLista()
         {
-            return ctx.Clientes.ToList();
+            return ctx.Emprestimos.ToList();
         }
-
-        public static Cliente RetornarClienteCPF(string aux)
-        {
-            
-            return ctx.Clientes.FirstOrDefault(x => x.ClienteCpf.Equals(aux));
-        }
-
     }
 }

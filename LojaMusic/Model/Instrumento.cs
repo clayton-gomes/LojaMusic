@@ -17,5 +17,6 @@ namespace LojaMusic.Model
         public string InstrumentoNome { get; set; }
         public float InstrumentoPreco { get; set; }
         public Categoria InstrumentoCategoria { get; set; }
+        public int InstrumentoQuantidade { get; set; }
     }
 }
